@@ -1,0 +1,18 @@
+server:
+  address: 0.0.0.0
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eternal_tales_db
+    username: root
+    password: 2160
+
+  jpa:
+    hibernate.ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.default_batch_fetch_size: 100
+    open-in-view: false
+    defer-datasource-initialization: false
