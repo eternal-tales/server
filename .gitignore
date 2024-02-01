@@ -39,3 +39,7 @@ out/
 
 ### Apple ###
 .DS_Store
+
+### application ###
+src/main/resources/application-db.yml
+src/main/resources/application-cloud.yml
