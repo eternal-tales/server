@@ -24,5 +24,7 @@ public interface PetHistoryRepository extends JpaRepository<PetHistory, Long> {
 	// 	@Param("productCode") Long productCode
 	// );
 
-	List<PetHistory> findAllByPet_IdAndDeletedAtIsNullOrderByCreatedAtDesc(Long id);
+	List<PetHistory> findAllByPet_IdAndPet_DeletedAtIsNullAndDeletedAtIsNullOrderByCreatedAtAsc(Long id);
+
+	List<PetHistory> findAllByPet_IdAndWishedIsTrueOrderByCreatedAtAsc(Long id);
 }
